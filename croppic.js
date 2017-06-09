@@ -702,7 +702,8 @@
 					that.imgEyecandy.hide();
 
                 that.destroy();
-				
+		
+		that.obj.append('<img class="croppedImg" src="' + response.url + '?'+Math.random()+'">');
                 that.obj.append('<img class="croppedImg" src="' + response.url + '">');
                 if (that.options.outputUrlId !== '') { $('#' + that.options.outputUrlId).val(response.url); }
 
